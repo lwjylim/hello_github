@@ -1,0 +1,55 @@
+1、文件与文件夹
+1）rm:删除命令 
+
+       例：$  rm  -i  文件名------------->有询问“Y/N”；          rm  -r  文件名  --------------->删除该文件夹和子目录下的所有文件；
+
+       例：$  rm  -f  文件名-------------> 直接删除，不询问
+
+2)  mv:移动目录或文件，还可以重命名
+
+       例：$   mv  text  /zzz  ------------->将text移动到zzz目录下；
+
+       例：$   mv  text  zzz  --------------->text重命名为zzz
+
+3)  mkdir:创建路径和删除路径,创建目录
+
+       例：$   mkdir  zzz  ------------->在当前目录下创建zzz的目录；
+
+       例：$   rmdir  zzz  --------------->删除目录zzz
+
+4)  touch :创建空文件
+
+        例：$  touch  zzz.xx  ---------------->创建文件名是zzz.xx的文件
+
+5）cat :查看文件内容
+
+        例：$  cat  zzz.xx ----------------->查看文件z
+
+
+开机以命令模式启动，执行：
+systemctl set-default multi-user.target
+
+开机以图形界面启动，执行：
+systemctl set-default graphical.target
+查看当前启动模式： 
+
+systemctl get-default
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+scp /export/servers/hadoop/etc/hadoop hadoop02 /export/servers/hadoop/etc/hadoop
